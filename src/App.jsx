@@ -1,14 +1,15 @@
-import './App.css';
+import '../css/App.css';
+import Header from './components/Header';
 // import './App.scss';
 
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-       
+      <Header />
+      <div className="App-body">
        <h1>hola fucking mundo</h1>
-      </header>
+      </div>
     </div>
   );
 }

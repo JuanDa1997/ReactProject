@@ -20,7 +20,9 @@ module.exports = {
             {
                 type:"asset",
                 test:/.(png|svg|jpeg|gif)$/i,
-            }
+                
+            },
+            
         ],
     },
     resolve: {

@@ -573,13 +573,15 @@ html {
         #menu-principal {
 
             justify-content: start;
+            height: 12vw;
 
             #open-menu {
                 background-color: transparent;
                 border: none;
                 color: none;
                 text-decoration: none;
-                margin: 40px;
+                padding-left: 5vw;
+               
 
                 img {
 
@@ -594,32 +596,43 @@ html {
             #open-menu {
                 display: block;
             }
+
         }
 
         #menu-secundario {
             position: fixed;
             display: flex;
             background-color: black;
-
-
+            width: 100vw;
+            height: 100vh;
+            #close-menu {
+                
+                background-color: transparent;
+                display: flex;
+                align-items: center;
+                padding-top: 3vw;
+                padding-left: 5vw;
+                
+                border: none;
+                color: none;
+                text-decoration: none;
+                width: 100vw;
+                
+                img{
+                    width: 5vw;
+                }
+            }
 
             #Menu-Hamburguesa {
-
                 display: flex;
                 list-style: none;
                 flex-direction: column;
                 text-decoration: none;
                 justify-content: center;
                 align-items: flex-start;
-                width: 100vw;
-                height: 100vh;
+                height:70vh;
                 padding: 70px;
-
-                #close-menu {
-                    display: none;
-                }
-
-
+                
                 a {
                     color: silver;
                     font-size: 20px;
@@ -631,7 +644,7 @@ html {
                     align-items: center;
                     text-decoration: none;
                     height: inherit;
-                    font-size: 40px;
+                    font-size: 5vw;
 
                 }
 
@@ -1163,38 +1176,211 @@ html {
 
 }
 
-@media (max-width:500px) {
-    .App {
-        .history {
-            h1 {
-                font-size: 30px;
+
+@media (max-width: 500px) {
+    #Header {
+
+        #menu-principal {
+
+            justify-content: start;
+
+            #open-menu {
+                background-color: transparent;
+                border: none;
+                color: none;
+                text-decoration: none;
+               
+
+                img {
+
+                    width: 5vw;
+                }
             }
 
-            h2 {
-                font-size: 15px;
+            #Menu {
+                display: none;
+            }
+
+            #open-menu {
+                display: block;
+            }
+
+        }
+
+        #menu-secundario {
+            position: fixed;
+            display: flex;
+            background-color: black;
+            width: 100vw;
+            height: 100vh;
+            #close-menu {
+                
+                background-color: transparent;
+                display: flex;
+                align-items: center;
+                padding-top: 3vw;
+                padding-left: 5vw;
+                
+                border: none;
+                color: none;
+                text-decoration: none;
+                width: 100vw;
+                
+                img{
+                    width: 5vw;
+                }
+            }
+
+            #Menu-Hamburguesa {
+                display: flex;
+                list-style: none;
+                flex-direction: column;
+                text-decoration: none;
+                justify-content: center;
+                align-items: flex-start;
+                height:70vh;
+                padding: 70px;
+                
+                a {
+                    color: silver;
+                    font-size: 20px;
+                    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                    display: flex;
+                    top: 0;
+                    left: 0;
+                    justify-content: center;
+                    align-items: center;
+                    text-decoration: none;
+                    height: inherit;
+                    font-size: 5vw;
+
+                }
+
+                // 
+            }
+
+            display:none;
+        }
+
+        #container-logo {
+            width: 100vw;
+
+
+
+            #logo-game {
+                width: 50vw;
+                max-width: none;
+                margin: 0 auto;
+            }
+
+        }
+    }
+
+    .App {
+        .algo {
+           
+            .contenido {
+    
+                border-radius: 4vw;
+                justify-content: none;
+                
+    
+                .inf {
+                    
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    width: 55vw;
+                    height: 40vw;
+    
+                    h1 {
+    
+                        padding-bottom: 5px;
+                        font-size: 2vw;
+                    }
+    
+                    p {
+                        font-size: 1.3vw;
+                    }
+                 
+                }
+    
+            }
+    
+            .imagen {
+    
+                img {
+                    width: 18vw;
+                }
+            }
+        }
+
+        .slider {
+            h1 {
+                font-size: 4vw;
+            }
+        }
+
+        .gdd {
+            .container{
+                width:52vw;
+                height:25vw;
+
+                img{
+                    width:50vw;
+                }
+            }
+            .imagen_rep {
+                img {
+                    width: 15vw;
+
+                }
             }
         }
 
         #App-body {
+            flex-direction: column;
 
             .title {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+                background-color: rgb(0, 0, 0);
+                height: 30vh;
+
+                width: 100vw;
+
                 img {
-                    width: 40vw;
+                    width: 30vw;
                 }
+
             }
 
             .contenedor-img {
 
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 40vh;
+                width: 100vw;
+
+
+
                 img {
-                    width: 80vw;
-                    border-radius: 28px;
+                    box-shadow: 22px 11px 23px 13px rgba(0, 0, 0, 0.33);
+                    box-shadow: 22px 11px 23px 13px rgba(0, 0, 0, 0.33);
+                    border-radius: 4vw;
+                    width: 60vw;
                 }
             }
         }
-
     }
 
     #footer {
+        flex-direction: column;
+        background-color: #7b4a9d;
+
         .container-contact {
             height: 50vh;
 
@@ -1203,13 +1389,13 @@ html {
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-
+                justify-content: space-evenly;
 
                 nav {
                     display: flex;
                     justify-content: center;
                     width: 50vw;
-
+                    padding: 15px;
 
                     ul {
 
@@ -1224,7 +1410,7 @@ html {
                             a {
                                 text-decoration: none;
                                 color: white;
-                                font-size: 15px;
+                                font-size: 2vw;
                             }
                         }
                     }
@@ -1244,6 +1430,7 @@ html {
 
 
                 .V {
+                    padding-left: 20px;
                     display: flex;
                     flex-direction: row;
                     width: 50vw;
@@ -1252,8 +1439,8 @@ html {
                     justify-content: space-evenly;
 
                     img {
-                        width: 20vw;
-                        height: 20vw;
+                        width: 15vw;
+                        height: 15vw;
                     }
 
                     .info {
@@ -1263,13 +1450,13 @@ html {
 
 
                         h1 {
-                            font-size: 3vw;
+                            font-size: 2vw;
                             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
                             color: white;
                         }
 
                         p {
-                            font-size: 2.5vw;
+                            font-size: 2vw;
                             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
                             color: whitesmoke;
                         }
@@ -1279,6 +1466,7 @@ html {
                 }
 
                 .J {
+                    padding-left: 20px;
 
                     display: flex;
                     flex-direction: row;
@@ -1288,8 +1476,8 @@ html {
                     justify-content: space-evenly;
 
                     img {
-                        width: 20vw;
-                        height: 20vw;
+                        width: 15vw;
+                        height: 15vw;
                     }
 
                     .info {
@@ -1299,13 +1487,13 @@ html {
 
 
                         h1 {
-                            font-size: 3vw;
+                            font-size: 2vw;
                             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
                             color: white;
                         }
 
                         p {
-                            font-size: 2.5vw;
+                            font-size: 2vw;
                             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
                             color: whitesmoke;
                         }
@@ -1314,6 +1502,7 @@ html {
                 }
 
                 .A {
+                    padding-left: 20px;
                     display: flex;
                     flex-direction: row;
                     width: 50vw;
@@ -1322,8 +1511,8 @@ html {
                     justify-content: space-evenly;
 
                     img {
-                        width: 20vw;
-                        height: 20vw;
+                        width: 15vw;
+                        height: 15vw;
                     }
 
                     .info {
@@ -1333,13 +1522,13 @@ html {
 
 
                         h1 {
-                            font-size: 3vw;
+                            font-size: 2vw;
                             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
                             color: white;
                         }
 
                         p {
-                            font-size: 2.5vw;
+                            font-size: 2vw;
                             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
                             color: whitesmoke;
                         }
@@ -1351,5 +1540,29 @@ html {
             }
 
         }
+
+        .linea {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            .line {
+                width: 90vw;
+                height: .1vw;
+                border-radius: 50px;
+                background-color: whitesmoke;
+            }
+
+            h1 {
+                padding: 2vw;
+                color: white;
+                font-size: 1.5vw;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+        }
+
     }
+
 }

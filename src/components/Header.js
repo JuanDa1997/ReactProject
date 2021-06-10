@@ -13,14 +13,22 @@ class Header extends Component {
         // Crea una referencia para guardar el elemento textInput del DOM
         
         this.handleClick = this.handleClick.bind(this);
+        this.closeMenu = this.closeMenu.bind(this);
         this.state ={
             display: 'block'
+            
         }
+
     }
    
     handleClick(){
     
         document.getElementById('menu-secundario').style.display = 'block'
+
+    }
+
+    closeMenu(){
+        document.getElementById('menu-secundario').style.display = ''
 
     }
     
@@ -40,14 +48,13 @@ class Header extends Component {
                         <li><a href="https://we.tl/t-RWZHbqq2Un">Descargas</a></li>  
                     </ul>
                 </nav>
-                <nav id="menu-secundario">
+                <nav id="menu-secundario" class="menu-secundario">
+                    <button id="close-menu" aria-label="cerrar menú" onClick={this.closeMenu.bind(this)}>
+                        <img src={menu} alt="cerrar menú" />
+                    </button>
                     <ul id = "Menu-Hamburguesa">
-                        <button id="close-menu" aria-label="abrir menú" >
-                            <img src={exit} alt="cerrar menú" />
-                        </button>
-                        <li><a href="">Home</a></li>
-                        <li><a href="">About Us</a></li>
-                        <li><a href="">Contacts</a></li>
+                        <li><a href="https://github.com/valviveros/San-Hogwarts/tree/juan">Github</a></li>  
+                        <li><a href="https://we.tl/t-RWZHbqq2Un">Descargas</a></li>  
                     </ul>
                 </nav>
                 

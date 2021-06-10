@@ -1,10 +1,6 @@
 import React, { Component } from 'react';
 import logo from '../../asset/images/logo.png';
 import menu from '../../asset/images/menu.png';
-import exit from '../../asset/images/cancel.png';
-
-
-
 
 class Header extends Component {
 
